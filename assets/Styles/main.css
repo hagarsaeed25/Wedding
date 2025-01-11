@@ -7,12 +7,12 @@
 :root {
   --white: #ffffff;
   --main-color: #d68989;
-  --title-color: #000000;
+  --title-color: #303030;
   --text-color: #888888;
   --bg-color: #fe6c61;
   --section-padding: 60px;
   --h1-size: 62px;
-  --h2-size: 36px;
+  --h2-size: 17px;
   --h3-size: 20px;
   --text-size: 20px;
   --alt-text-size: 18px;
@@ -87,19 +87,19 @@ section:not(:first-child) {
 
 .btn {
   display: block;
-  width: 100px;
+  width: 130px;
   padding: 10px 17px;
-  background-color: var(--white);
+  background-color: var( --main-color);
   color: var(--title-color);
   text-align: center;
   border-radius: 2px;
 }
 .praimary-btn {
   background-color: rgb(255 255 255 / 0.1);
-  color: white;
   padding: 5px;
   margin-right: 10px;
   align-items: center;
+  border: 1px solid white;
 } 
 .bttn{
   display: flex;
@@ -160,7 +160,7 @@ header .container {
   header nav ul li a {
     padding-left: 40px;
     font-weight: bold;
-    color: var(--white);
+    color:black;
   }
 }
 
@@ -183,4 +183,58 @@ header .container {
   color: var(--white);
   font-size: var(--text-size);
   line-height: 1.5;
+}
+.articles{
+  margin:auto;
+  gap: 60px;
+}
+@media (min-width:992px) {
+  .articles .article {
+    width: 20%;
+    text-align: center;
+  }
+}
+
+.article p{
+  color:var( --text-color) ;
+  font-family: 16px;
+  line-height: 1.5;
+}
+
+
+section .col {
+  margin: auto;
+}
+section  h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+section  h3{
+  font-family:"Dancing Script", sans-serif;
+  color: var(--main-color);
+  font-size: 28px;
+  line-height: 1.5;
+}
+section  p {
+  line-height: 1.5;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+  .offer img{
+    border-radius: 10px;
+  }
+.offers{
+  /* display: flex; */
+  gap: 40px;
+}
+.offer h2 {
+  line-height: 1.7;
+}
+.offer a{
+  cursor: pointer;
+  color: var(--main-color);
+}
+.offer a:hover{
+  color: black;
 }
