@@ -1,0 +1,46 @@
+# CSS Variables
+:root {
+  --white: #ffffff;
+  --main-color:#D68989;
+  --secondary-color: #7c4a8b;
+  --title-color:#545454;
+  --text-color:#888888;
+  --alt-text-color: rgb(241, 139, 109);
+  --section-padding: 60px;
+  --h1-size: 72px;
+  --h2-size: 36px;
+  --h3-size: 20px;
+  --text-size: 20px;
+  --alt-text-size: 18px;
+}
+
+# Fonts
+font-family:"Alegreya sans", sans-serif;
+font-family:"Dancing script", sans-serif;
+
+# Container Media Query
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+ 
+Home
+About
+Our Team
+Weddings
+Blog

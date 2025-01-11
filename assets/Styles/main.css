@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --main-color: #d68989;
+  --title-color: #000000;
+  --text-color: #888888;
+  --bg-color: #fe6c61;
+  --section-padding: 60px;
+  --h1-size: 62px;
+  --h2-size: 36px;
+  --h3-size: 20px;
+  --text-size: 20px;
+  --alt-text-size: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Alegreya sans", sans-serif;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+@media (min-width: 992px) {
+  .col {
+    width: 45%;
+  }
+  h1 {
+    font-size: var(--h1-size);
+  }
+  h2 {
+    font-size: var(--h2-size);
+  }
+}
+section:not(:first-child) {
+  padding: var(--section-padding) 0;
+}
+.title-text {
+  color: var(--title-color);
+}
+.secondary-text {
+  color: var(--text-color);
+  font-size: var(--text-size);
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: block;
+  width: 100px;
+  padding: 10px 17px;
+  background-color: var(--white);
+  color: var(--title-color);
+  text-align: center;
+  border-radius: 2px;
+}
+.praimary-btn {
+  background-color: rgb(255 255 255 / 0.1);
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
+  align-items: center;
+} 
+.bttn{
+  display: flex;
+  text-align: center;
+}
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  header nav {
+    position: relative;
+  }
+  header nav label {
+    cursor: pointer;
+  }
+  header nav input {
+    appearance: none;
+  }
+  header nav input:checked + ul {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--white);
+    z-index: 10;
+    min-width: 250px;
+  }
+  header nav ul li:not(:last-child) {
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+  }
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+  }
+}
+@media (min-width: 992px) {
+  header nav label img,
+  header nav input {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  header nav ul li a {
+    padding-left: 40px;
+    font-weight: bold;
+    color: var(--white);
+  }
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../Images/full-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero .container {
+  height: 100vh;
+}
+.hero .container h1 {
+  font-family: "Dancing Script", sans-serif;
+  color: var(--white);
+  line-height: 1.5;
+}
+.hero .container p {
+  color: var(--white);
+  font-size: var(--text-size);
+  line-height: 1.5;
+}
